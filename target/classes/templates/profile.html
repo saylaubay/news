@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <div th:replace="fragment/fragments :: head_link"></div>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" th:href="@{/}">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto" >
+                        <li class="nav-item">
+                            <a class="nav-link" sec:authorize="hasAuthority('DELETE')" th:href="@{/auth/usersList}">All users List</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" th:href="@{/myNews}" >My news list <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" sec:authorize="hasAuthority('DELETE')" th:href="@{/allNewsList}">All news List</a>
+                        </li>
+<!--                        <li class="nav-item">&ndash;&gt;-->
+<!--                            <a class="nav-link" sec:authorize="isAuthenticated()"  th:href="@{/auth/profile}">Profile</a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" th:href="@{/newsList}">News List</a>-->
+<!--                        </li>-->
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <!--                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+                        <!--                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+                        <a sec:authorize="isAuthenticated()" th:href="@{/auth/logout}" class="btn btn-outline-success my-2 my-sm-0">Log out</a>
+                        <a sec:authorize="isAnonymous()" th:href="@{/auth/login}" class="btn btn-outline-success my-2 my-sm-0">Login</a>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form th:action="@{/auth/profile}" method="post" th:object="${user}">
+                    <label >First name</label>
+                    <input type="text" class="form-control" th:field="*{firstName}"><br>
+                    <label >Last name</label>
+                    <input type="text" class="form-control" th:field="*{lastName}"><br>
+                    <label >Username</label>
+                    <input type="text" class="form-control" th:field="*{username}"><br>
+                    <label >Password</label>
+                    <input type="text" class="form-control" th:field="*{password}"><br>
+                    <a th:href="@{/auth/login}">Login</a><br>
+                    <button class="btn btn-success" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

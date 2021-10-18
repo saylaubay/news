@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <div th:replace="fragment/fragments :: head_link"></div>
+</head>
+<body>
+
+    <div th:replace="fragment/fragments :: head"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form th:action="@{/addXabar}" th:object="${newXabar}" method="post" enctype="multipart/form-data">
+                    <label>Title</label>
+                    <input type="text" class="form-control" th:field="*{title}"><br>
+                    <label>Category</label>
+                    <select class="custom-select" th:field="*{category.id}" >
+                        <option value="" selected>Open this select menu</option>
+                        <option  th:each="item : ${categories}" th:text="${item.name}" th:value="${item.id}">One</option>
+                    </select><br>
+                    <label>Body</label>
+<!--                    <input type="text" class="form-control" th:field="*{body}"><br>-->
+
+                    <textarea class="form-control" th:field="*{body}" rows="4"></textarea>
+                    <label>Image</label>
+                    <input type="file" name="fayl" class="form-control" ><br>
+                    <button class="btn btn-success" type="submit">save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

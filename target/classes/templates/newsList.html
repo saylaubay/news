@@ -1,0 +1,50 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <div th:replace="fragment/fragments :: head_link"></div>
+
+</head>
+<body>
+
+    <div th:replace="fragment/fragments :: head"></div>
+
+    <div class="container">
+        <div class="row">
+            <a class="btn btn-success" th:href="@{/addNew}">Add new</a>
+        </div>
+        <div class="row">
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Body</th>
+                    <th scope="col">Photo</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="xabar : ${xabars}">
+                    <th scope="row" th:text="${xabar.id}">1</th>
+                    <td th:text="${xabar.title}">Mark</td>
+                    <td th:text="${xabar.body}">Otto</td>
+                    <td>
+                        <img style="width: 7rem;" th:src="@{${'fayllar/' + xabar.imgName}}">
+                    </td>
+                    <td>
+                        <a class="btn btn-info" th:href="@{/editNew/{id}(id=${xabar.id})}">Edit</a>
+                        <a class="btn btn-danger" th:href="@{/deleteNew/{id}(id=${xabar.id})}">Delete</a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
