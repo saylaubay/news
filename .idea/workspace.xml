@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a1cc5ff-8a39-40a9-ae64-6f93120260c0" name="Default Changelist" comment="" />
+    <list default="true" id="6a1cc5ff-8a39-40a9-ae64-6f93120260c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +157,8 @@
       <workItem from="1634459450419" duration="303000" />
       <workItem from="1634467010680" duration="19802000" />
       <workItem from="1634532959047" duration="5168000" />
-      <workItem from="1634539278943" duration="28321000" />
+      <workItem from="1634539278943" duration="29247000" />
+      <workItem from="1634583363734" duration="86000" />
     </task>
     <task id="LOCAL-00001" summary="success 1">
       <created>1634577067744</created>
@@ -176,6 +179,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="success 1" />
