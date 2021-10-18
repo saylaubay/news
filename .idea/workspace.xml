@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a1cc5ff-8a39-40a9-ae64-6f93120260c0" name="Default Changelist" comment="success 3">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="6a1cc5ff-8a39-40a9-ae64-6f93120260c0" name="Default Changelist" comment="for heroku" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +155,7 @@
       <workItem from="1634532959047" duration="5168000" />
       <workItem from="1634539278943" duration="29247000" />
       <workItem from="1634583363734" duration="86000" />
-      <workItem from="1634586081376" duration="294000" />
+      <workItem from="1634586081376" duration="624000" />
     </task>
     <task id="LOCAL-00001" summary="success 1">
       <created>1634577067744</created>
