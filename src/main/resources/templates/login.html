@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <div th:replace="fragment/fragments :: head_link"></div>
+</head>
+<body>
+
+    <div th:replace="fragment/fragments :: head"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <form class="form-group" th:action="@{/auth/login}" method="post" th:object="${loginDto}">
+                    <label >Username</label>
+                    <input class="form-control" type="text" th:field="*{username}"><br>
+                    <label >Password</label>
+                    <input class="form-control" type="text" th:field="*{password}"><br>
+                    <a th:href="@{/auth/register}">Register</a><br>
+                    <button class="btn btn-success" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
