@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <div th:replace="fragment/fragments :: head_link"></div>
+</head>
+<body>
+
+    <div th:replace="fragment/fragments :: head"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form th:action="@{/addNewCategory}" th:object="${categoryDto}" method="post" enctype="multipart/form-data">
+                    <label>Title</label>
+                    <input type="text" class="form-control" th:field="*{name}"><br>
+                    <button class="btn btn-success" type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
