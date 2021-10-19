@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a1cc5ff-8a39-40a9-ae64-6f93120260c0" name="Default Changelist" comment="for heroku always">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6a1cc5ff-8a39-40a9-ae64-6f93120260c0" name="Default Changelist" comment="for heroku always bbb">
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +160,7 @@
       <workItem from="1634586081376" duration="1214000" />
       <workItem from="1634623423319" duration="718000" />
       <workItem from="1634624656059" duration="1024000" />
+      <workItem from="1634629673383" duration="427000" />
     </task>
     <task id="LOCAL-00001" summary="success 1">
       <created>1634577067744</created>
@@ -191,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634586802536</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="for heroku always bbb">
+      <created>1634629698472</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1634629698472</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +221,8 @@
     <MESSAGE value="success 3" />
     <MESSAGE value="for heroku" />
     <MESSAGE value="for heroku always" />
-    <option name="LAST_COMMIT_MESSAGE" value="for heroku always" />
+    <MESSAGE value="for heroku always bbb" />
+    <option name="LAST_COMMIT_MESSAGE" value="for heroku always bbb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
