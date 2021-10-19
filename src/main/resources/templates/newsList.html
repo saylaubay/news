@@ -33,7 +33,7 @@
                     <td th:text="${xabar.title}">Mark</td>
                     <td th:text="${xabar.body}">Otto</td>
                     <td>
-                        <img style="width: 7rem;" th:src="@{${'fayllar/' + xabar.imgName}}">
+                        <img style="width: 7rem;" th:src="@{${'/fayllar/' + xabar.imgName}}">
                     </td>
                     <td>
                         <a class="btn btn-info" th:href="@{/editNew/{id}(id=${xabar.id})}">Edit</a>

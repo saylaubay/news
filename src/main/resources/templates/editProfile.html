@@ -1,14 +1,13 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
     <div th:replace="fragment/fragments :: head_link"></div>
-
 </head>
 <body>
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -20,17 +19,27 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto" >
-                        <li class="nav-item active" th:each="cat : ${categories}">
-                            <a class="nav-link" th:href="@{/category/{catName}(catName=${cat.name})}" th:text="${cat.name}">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" sec:authorize="hasAuthority('DELETE')" th:href="@{/auth/usersList}">All users List</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" th:href="@{/myNews}" >My news list <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" sec:authorize="isAuthenticated()"  th:href="@{/auth/profile}">Profile</a>
+                            <a class="nav-link" sec:authorize="hasAuthority('DELETE')" th:href="@{/allNewsList}">All news List</a>
                         </li>
+<!--                        <li class="nav-item">&ndash;&gt;-->
+<!--                            <a class="nav-link" sec:authorize="isAuthenticated()"  th:href="@{/auth/profile}">Profile</a>-->
+<!--                        </li>-->
 <!--                        <li class="nav-item">-->
 <!--                            <a class="nav-link" th:href="@{/newsList}">News List</a>-->
 <!--                        </li>-->
                     </ul>
-
+                    <ul class="navbar-nav">
+                        <li class="nav-item my-2 my-lg-0">
+                            <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/auth/editProfile}">Edit profie</a>
+                        </li>
+                    </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <!--                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
                         <!--                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
@@ -41,38 +50,27 @@
             </nav>
         </div>
     </div>
-    <br>
-    <div class="row">
-        <div class="input-group mb-3">
-            <form th:action="@{/search}" class="input-group mb-3" method="post">
-                <h3>Izlew</h3>
-                <input type="text" name="query" class="form-control" placeholder="Key word" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="submit">Izlew</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <br><br>
 </div>
-<!--    <div th:replace="fragment/fragments :: head"></div>-->
-
 
 
     <div class="container">
         <div class="row">
-            <div class="col-md-4" th:each="xabar : ${xabarlar}">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" th:src="@{${'/fayllar/' + xabar.imgName}}" alt="Card image cap">
-                    <div class="card-body">
-                        <a th:href="@{/news/{title}(title=${xabar.title})}">
-                            <h6 class="card-title" th:text="${xabar.title}">Card title</h6>
-                        </a>
-<!--                        <h5 class="card-title" th:text="${xabar.title}">Card title</h5>-->
-<!--                        <p class="card-text" th:text="${xabar.body}">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
-<!--                        <a href="#" class="btn btn-primary">Go somewhere</a>-->
-                    </div>
-                </div>
+            <div class="col-md-8 offset-md-2">
+
+                <form th:action="@{/auth/editProfile}" method="post" th:object="${user}">
+                    <label >First name</label>
+                    <input type="text" class="form-control" th:field="*{firstName}"><br>
+                    <label >Last name</label>
+                    <input type="text" class="form-control" th:field="*{lastName}"><br>
+                    <label >Username</label>
+                    <input type="text" class="form-control" th:field="*{username}"><br>
+                    <label >Old password</label>
+                    <input type="text" class="form-control" name="oldPass"><br>
+                    <label >New password</label>
+                    <input type="text" class="form-control" name="newPass"><br>
+<!--                    <a th:href="@{/auth/editProfile}">Login</a><br>-->
+                    <button class="btn btn-success" type="submit">Register</button>
+                </form>
             </div>
         </div>
     </div>
