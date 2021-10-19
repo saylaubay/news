@@ -1,8 +1,10 @@
 package com.example.news.component;
 
+import com.example.news.entity.Category;
 import com.example.news.entity.Permission;
 import com.example.news.entity.Role;
 import com.example.news.entity.User;
+import com.example.news.repository.CategoryRepository;
 import com.example.news.repository.RoleRepository;
 import com.example.news.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,10 +27,17 @@ public class DataLoader implements CommandLineRunner {
     private String initialMode;
     @Autowired
     PasswordEncoder passwordEncoder;
+    @Autowired
+    CategoryRepository categoryRepository;
 
     @Override
     public void run(String... args) throws Exception {
         if (initialMode.equals("always")){
+            categoryRepository.save(new Category("Sport"));
+            categoryRepository.save(new Category("Phone"));
+            categoryRepository.save(new Category("Car"));
+
+
             Set<Permission> adminPer = new HashSet<>();
             adminPer.add(Permission.DELETE);
             adminPer.add(Permission.EDIT);

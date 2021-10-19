@@ -1,5 +1,6 @@
 package com.example.news.service;
 
+import com.example.news.entity.Role;
 import com.example.news.entity.User;
 import com.example.news.payload.LoginDto;
 import com.example.news.payload.RegisterDto;
@@ -34,12 +35,14 @@ public class AuthService implements UserDetailsService {
             return false;
         }
 
+        Role admin = roleRepository.findByName("ADMIN");
         User user = new User(
             registerDto.getFirstName(),
                 registerDto.getLastName(),
                 registerDto.getUsername(),
                 passwordEncoder.encode(registerDto.getPassword()),
-                roleRepository.findByName("ADMIN")
+//                roleRepository.findByName("ADMIN")
+                admin
         );
 
         userRepository.save(user);
