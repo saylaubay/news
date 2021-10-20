@@ -4,33 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a1cc5ff-8a39-40a9-ae64-6f93120260c0" name="Default Changelist" comment="commit 10">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/news/payload/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addUser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/editProfile.html" afterDir="false" />
+    <list default="true" id="6a1cc5ff-8a39-40a9-ae64-6f93120260c0" name="Default Changelist" comment="successful">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/news/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/news/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/news/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/news/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragment/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragment/fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/newsList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/newsList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/news/component/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/news/component/DataLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/news/config/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/news/config/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/news/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/news/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/news/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/news/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/news/entity/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/news/entity/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/news/service/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/news/service/AuthService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragment/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragment/fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/newsList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/newsList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +163,7 @@
       <workItem from="1634623423319" duration="718000" />
       <workItem from="1634624656059" duration="1024000" />
       <workItem from="1634629673383" duration="4862000" />
-      <workItem from="1634652785516" duration="13178000" />
+      <workItem from="1634652785516" duration="14025000" />
     </task>
     <task id="LOCAL-00001" summary="success 1">
       <created>1634577067744</created>
@@ -259,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634658385689</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="successful">
+      <created>1634666350608</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1634666350608</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +272,8 @@
     <MESSAGE value="commit7" />
     <MESSAGE value="commit8" />
     <MESSAGE value="commit 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 10" />
+    <MESSAGE value="successful" />
+    <option name="LAST_COMMIT_MESSAGE" value="successful" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
