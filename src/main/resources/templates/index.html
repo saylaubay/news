@@ -29,22 +29,12 @@
 
                     </ul>
                     <ul class="navbar-nav">
-<!--                        <li class="nav-item my-2 my-lg-0">-->
-<!--                            <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/auth/editProfile}">Edit profie</a>-->
-<!--                        </li>-->
                         <li class="nav-item my-2 my-lg-0">
                             <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/auth/profile}">Profile</a>
                         </li>
                     </ul>
-<!--                    <ul>-->
-<!--                        <li>-->
-<!--                            <a href="/auth/usersList" >USERLIST</a>-->
-<!--                        </li>-->
-<!--                    </ul>-->
 
                     <form class="form-inline my-2 my-lg-0">
-                        <!--                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-                        <!--                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
                         <a sec:authorize="isAuthenticated()" th:href="@{/auth/logout}"
                            class="btn btn-outline-success my-2 my-sm-0">Log out</a>
                         <a sec:authorize="isAnonymous()" th:href="@{/auth/login}"
@@ -72,7 +62,6 @@
     </div>
     <br><br>
 </div>
-<!--    <div th:replace="fragment/fragments :: head"></div>-->
 
 
 <div class="container">
@@ -84,10 +73,6 @@
                     <a th:href="@{/news/{title}(title=${xabar.title})}">
                         <h6 class="card-title" th:text="${xabar.title}">Card title</h6>
                     </a>
-<!--                    <h5 class="card-title" th:text="${xabar.title}">Card title</h5>-->
-<!--                    <p class="card-text" th:text="${xabar.body}">Some quick example text to build on the card title and-->
-<!--                        make up the bulk of the card's content.</p>-->
-<!--                    <a href="#" class="btn btn-primary">Go somewhere</a>-->
                 </div>
             </div>
         </div>

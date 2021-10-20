@@ -28,12 +28,6 @@
                         <li class="nav-item">
                             <a class="nav-link" sec:authorize="hasAuthority('DELETE')" th:href="@{/allNewsList}">All news List</a>
                         </li>
-<!--                        <li class="nav-item">&ndash;&gt;-->
-<!--                            <a class="nav-link" sec:authorize="isAuthenticated()"  th:href="@{/auth/profile}">Profile</a>-->
-<!--                        </li>-->
-<!--                        <li class="nav-item">-->
-<!--                            <a class="nav-link" th:href="@{/newsList}">News List</a>-->
-<!--                        </li>-->
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item my-2 my-lg-0">
@@ -41,8 +35,6 @@
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <!--                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-                        <!--                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
                         <a sec:authorize="isAuthenticated()" th:href="@{/auth/logout}" class="btn btn-outline-success my-2 my-sm-0">Log out</a>
                         <a sec:authorize="isAnonymous()" th:href="@{/auth/login}" class="btn btn-outline-success my-2 my-sm-0">Login</a>
                     </form>
@@ -60,18 +52,6 @@
                 <h3 th:text="${'Last name : '+user.lastName}"></h3>
                 <h3 th:text="${'Username : '+user.username}"></h3>
                 <h3 th:text="${'Role : ' + user.role.name}"></h3>
-<!--                <form th:action="@{/auth/profile}" method="post" th:object="${user}">-->
-<!--                    <label >First name</label>-->
-<!--                    <input type="text" class="form-control" th:field="*{firstName}"><br>-->
-<!--                    <label >Last name</label>-->
-<!--                    <input type="text" class="form-control" th:field="*{lastName}"><br>-->
-<!--                    <label >Username</label>-->
-<!--                    <input type="text" class="form-control" th:field="*{username}"><br>-->
-<!--                    <label >Password</label>-->
-<!--                    <input type="text" class="form-control" th:field="*{password}"><br>-->
-<!--                    <a th:href="@{/auth/login}">Login</a><br>-->
-<!--                    <button class="btn btn-success" type="submit">Register</button>-->
-<!--                </form>-->
             </div>
         </div>
     </div>

@@ -21,7 +21,6 @@
                         <option  th:each="item : ${categories}" th:text="${item.name}" th:value="${item.id}">One</option>
                     </select><br>
                     <label>Body</label>
-<!--                    <input type="text" class="form-control" th:field="*{body}"><br>-->
 
                     <textarea class="form-control" th:field="*{body}" rows="4"></textarea>
                     <label>Image</label>

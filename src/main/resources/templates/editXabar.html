@@ -21,7 +21,6 @@
                     <option  th:each="item : ${categories}" th:text="${item.name}" th:value="${item.id}">One</option>
                 </select><br>
                 <label>Body</label>
-                <!--                    <input type="text" class="form-control" th:field="*{body}"><br>-->
 
                 <textarea class="form-control" th:field="*{body}" rows="4"></textarea>
                 <label>Image</label>
@@ -32,25 +31,6 @@
     </div>
 </div>
 
-<!--<div class="container">-->
-<!--    <div class="row">-->
-<!--        <div class="col-md-8 offset-md-2">-->
-<!--&lt;!&ndash;            <div th:if="">&ndash;&gt;-->
-
-<!--            </div>-->
-<!--            <form th:action="@{/editNew/{id}(id=${editXabar.id})}" th:object="${editXabar}" method="post" enctype="multipart/form-data">-->
-<!--                <label>Title</label>-->
-<!--                <input type="text" class="form-control" th:field="*{title}"><br>-->
-<!--                <label>Body</label>-->
-<!--                <input type="text" class="form-control" th:field="*{body}"><br>-->
-<!--                <label>Image</label>-->
-<!--                <img style="width: 70px;" th:src="@{${'fayllar/'+ editXabar.imgName}}">-->
-<!--                <input type="file" name="fayl" class="form-control" ><br>-->
-
-<!--                <button class="btn btn-success" type="submit">save</button>-->
-<!--            </form>-->
-<!--        </div>-->
-<!--    </div>-->
 </div>
 
 

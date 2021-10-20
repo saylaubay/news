@@ -26,7 +26,6 @@
                         <option value="" selected>Open this select menu</option>
                         <option  th:each="item : ${roleList}" th:text="${item.name}" th:value="${item.id}">One</option>
                     </select><br>
-<!--                    <a th:href="@{/auth/login}">Login</a><br>-->
                     <button class="btn btn-success" type="submit">Add new user</button>
                 </form>
             </div>

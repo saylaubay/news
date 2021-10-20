@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a1cc5ff-8a39-40a9-ae64-6f93120260c0" name="Default Changelist" comment="successful">
+    <list default="true" id="6a1cc5ff-8a39-40a9-ae64-6f93120260c0" name="Default Changelist" comment="bug 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addNew.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addNew.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/allNews.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/allNews.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/categoryList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/categoryList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editProfile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editXabar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editXabar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragment/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragment/fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/myXabarList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/myXabarList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/oneXabar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/oneXabar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +129,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NewsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="news" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.news.NewsApplication" />
@@ -164,6 +189,7 @@
       <workItem from="1634624656059" duration="1024000" />
       <workItem from="1634629673383" duration="4862000" />
       <workItem from="1634652785516" duration="14025000" />
+      <workItem from="1634709122223" duration="810000" />
     </task>
     <task id="LOCAL-00001" summary="success 1">
       <created>1634577067744</created>
@@ -242,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634666350608</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="bug 1">
+      <created>1634709264341</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1634709264341</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +306,8 @@
     <MESSAGE value="commit8" />
     <MESSAGE value="commit 10" />
     <MESSAGE value="successful" />
-    <option name="LAST_COMMIT_MESSAGE" value="successful" />
+    <MESSAGE value="bug 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
